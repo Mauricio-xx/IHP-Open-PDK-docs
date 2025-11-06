@@ -1,0 +1,37 @@
+{
+    "meta": {
+        "version": 2,
+        "flow": [
+            "Yosys.Synthesis",
+            "OpenROAD.CheckSDCFiles",
+            "OpenROAD.Floorplan",
+            "OpenROAD.TapEndcapInsertion",
+            "OpenROAD.GeneratePDN",
+            "OpenROAD.IOPlacement",
+            "OpenROAD.GlobalPlacement",
+            "OpenROAD.RepairDesign",
+            "OpenROAD.DetailedPlacement",
+            "OpenROAD.GlobalRouting",
+            "OpenROAD.DetailedRouting",
+            "OpenROAD.FillInsertion",
+            "Magic.StreamOut",
+            "Magic.DRC",
+            "Checker.MagicDRC",
+            "Magic.SpiceExtraction",
+            "Netgen.LVS",
+            "Checker.LVS"
+        ]
+    },
+    "DESIGN_NAME": "counter",
+    "VERILOG_FILES": "dir::src/counter.v",
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 10,
+    "CLOCK_NET": "clk",
+    "FP_SIZING": "absolute",
+    "DIE_AREA": [0, 0, 100, 100],
+    "CORE_AREA": [10, 10, 90, 90],
+    "PL_TARGET_DENSITY": 0.45,
+    "pdk::ihp-sg13g2*": {
+        "CLOCK_PERIOD": 10
+    }
+}
