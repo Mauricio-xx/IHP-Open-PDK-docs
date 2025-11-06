@@ -62,3 +62,17 @@ venv.bak/
 .DS_Store
 *.pyc
 *.log
+
+# AI context files
+CLAUDE.md
+.claude/
+.codex/
+.codex_history/
+.cursor/
+.cursorrules
+.github/copilot-instructions.md
+*_ai_context.md
+*_claude_context.md
+*_claude_summary.*
+*_codex_context.*
+*_codex_summary.*

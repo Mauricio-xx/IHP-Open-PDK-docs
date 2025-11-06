@@ -54,6 +54,8 @@ extensions = [
     "sphinxcontrib.bibtex",
 ]
 
+autosectionlabel_prefix_document = True
+
 bibtex_bibfiles = ['refs.bib']
 
 
@@ -115,6 +117,7 @@ exclude_patterns = [
     "_build",
     "env",
     "venv",
+    "docs_env",
     "Thumbs.db",
     ".DS_Store",
 ]
@@ -235,4 +238,3 @@ latex_elements = {
 
 def setup(app):
     app.add_css_file("IHP_theme.css")
-
