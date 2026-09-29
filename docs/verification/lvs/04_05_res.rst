@@ -269,13 +269,15 @@ lvsres
    * - Description
      - Metal resistor used for LVS purpose.
    * - Device Recognition
-     - Metal1, Metal1.res
+     - Metal[1-5], Metal[1-5].res, TopMetal[1-2], TopMetal[1-2].res
    * - Model Name
      - lvsres
    * - Layout Cell Name
      - sg13g2_pr - lvsres
    * - Parameters
-     - w, l, R
+     - w, l, R, layer
+   * - Netlist Syntax
+     - `R0 net1 net2 lvsres R=0.022 w=5u l=1u layer=Metal1`
 
 **Parameters Information**
 
@@ -290,19 +292,24 @@ lvsres
      - LVS-Comparison
    * - W
      - RES Width
-     - ❌
+     - ✅
      - ✅
      - ✅
    * - L
      - RES Length
-     - ❌
+     - ✅
      - ✅
      - ✅
    * - R
      - Resistance Value
      - ❌
+     - ✅
      - ❌
-     - ❌
+   * - layer
+     - Metal Layer
+     - ✅
+     - ✅
+     - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
