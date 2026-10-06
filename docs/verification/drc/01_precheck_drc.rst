@@ -8,7 +8,14 @@ Precheck (Minimal) DRC rules
 
 .. tip::
 
-    These are used for rejection tests during the pre-tapeout checks.
+    These are used for rejection tests during the pre-tapeout checks. To check only this rule set, run:
+
+    .. code-block:: bash
+
+        python3 run_drc.py --path=<your_design>.gds --precheck_drc
+
+    ``--precheck_drc`` implies ``--disable_extra_rules``, ``--no_offgrid`` and ``--no_angle``, and antenna
+    rules are not run. See :ref:`CLI Usage` for the other options.
 
 Activ (not in BEOL)
 -------------------
